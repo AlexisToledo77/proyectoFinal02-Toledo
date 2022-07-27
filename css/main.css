@@ -1,0 +1,400 @@
+/* reset */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    
+    box-sizing: border-box;
+    
+}
+
+
+
+.header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+/* estilos del menu BOOTSTRAP */
+
+/* estilos botones */
+.botonesMenu li{
+    font-weight: bold;
+    
+}
+
+.nav-item{
+    
+    font-size: 1rem;
+    
+}
+.nav-item:hover {
+    background-color: blue;
+    border-radius: 10px;
+}
+.btn1 {
+    background-color: blue;
+    border-radius: 10px;
+}
+
+
+/* animacion logo */
+.logo{
+    width: 10rem;
+    top: 4px;
+    animation-name: latir;
+    animation-iteration-count: initial;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+
+}
+
+@keyframes latir{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+   
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+
+}
+
+.ig{
+    height: 20px;
+    transition: 0.4s;
+    margin-right: 5px;
+    
+}
+ /* hover de las redes */
+
+.ig:hover{
+    transform: scale(1.5);
+    margin-right:7px;
+}
+
+
+
+.fb{
+    height: 20px;
+    transition: 0.4s;
+}
+
+.fb:hover{
+    transform: scale(1.5);
+    margin-left:7px;
+}
+
+/* grid main */
+.contenedorPrincipalMain{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "presentacion"
+                         "main"
+                         "lorem"
+                         "footer";
+}
+
+.presentacion{
+    background-image: linear-gradient(to left, rgb(218, 218, 218), rgb(228, 64, 217) );
+    height: 300px;
+    grid-area: presentacion;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+.presentacion p{
+    position: absolute;
+    color: rgb(32, 27, 27);
+    text-align: center;
+    
+}
+.body {
+    contain: content;
+}
+
+/* estilos texto nosotros home (Ruta especificidad) */
+.mainIndex{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.main__img{
+    display: grid;
+    background-color: black;
+    grid-template-areas: "foto1 foto2 foto3"
+                         "foto1 foto4 foto5";
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.foto1{
+    grid-area: foto1;
+    
+}
+.foto2{
+    grid-area: foto2;
+}
+.fotoChica1{
+    grid-area: foto3;
+}
+.fotoChica2{
+    grid-area: foto4;
+}
+.fotoChica3{
+    grid-area: foto5;
+}
+
+.lorem{
+    grid-area: lorem;
+    margin: 2rem;
+    text-align: center;
+}
+
+/* estilos footer */
+.footer{
+    grid-area: footer;
+    background-color: rgb(66, 64, 64);
+    margin-top: 4rem;
+    color: rgb(236, 232, 232);
+    text-align: center;
+}
+.footer a{
+    color: aliceblue;
+    /* margin-left: 20px; */
+    
+}
+
+/* media queries mobile */
+@media screen and (max-width: 800px){
+   
+    .logo{
+        display: none;
+    }
+    .presentacion{
+        display: flex;
+        font-size: 1.3rem;
+        font-weight: bold;
+        width: 50%;
+    }
+    .main__img{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .lorem p{
+        display: flex;
+        font-size: 1.3rem;
+        width: 50%;
+    }
+    .footer{
+        display: flex;
+    }
+    .footer p{
+        margin-left: 100px;
+    }
+} 
+
+
+
+/* estilos HTML PRODUCTOS */
+
+
+
+@media screen and (min-width: 1024px){
+    .mainProductos{
+        display: grid;
+        grid-template-areas: "prodGuir prodGuir prodGuir"
+                             "guirVintage guirLed guirPera"
+                             "prodNeon prodNeon prodNeon"
+                             "neonTigre neonEmoji neonHelado";
+    }
+}
+
+.prodGuir{
+    grid-area: prodGuir;
+}
+.guirVintage{
+    grid-area: guirVintage;
+}
+.guirLed{
+    grid-area: guirLed;
+}
+.guirPera{
+    grid-area: guirPera;
+}
+
+.prodNeon{
+    grid-area: prodNeon;
+}
+
+/* tipos de productos */
+
+.tituloProductos{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/* nombre del producto */
+.mainProductos div h2{
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+/* descripcion del producto */
+
+.mainProductos div h3{
+    margin-bottom: 20px;
+}
+
+.mainProductos div h4{
+    margin-bottom: 20px;
+}
+
+.mainProductos div p{
+    margin-bottom: 20px;
+}
+
+/* estilos HTML INFOMRACION TECNICA */
+
+@media screen and (min-width: 1024px){
+    .mainInfoTecnica{
+        display: grid;
+        grid-template-areas: "tecnicaGuir tecnicaNeon tecnicaLuminaria";
+    }
+}
+.parrafo {
+    height: auto;
+    width: 700px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.parrafo p{
+    height: auto;
+}
+
+.tecnicaGuir{
+    grid-area: tecnicaGuir;
+}
+.tecnicaNeon{
+    grid-area: tecnicaNeon;
+}
+.tecnicaLuminarias{
+    grid-area: tecnicaLuminarias;
+}
+
+.tituloInfoTecnica{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+   
+}
+
+/* titulos de productos informacion tecnica */
+
+.mainInfoTecnica h2{
+    margin: 20px;
+}
+
+
+/* descripcion de informacion tecnica */
+.tituloInfoTecnica{
+    margin-left: 5%;
+    margin-right: 2%;
+}
+.mainInfoTecnica{
+    margin-left: 3%;
+}
+.mainInfoTecnica p{
+    margin-left: 20px; 
+}
+
+
+
+/* estilos HTML NOSOTROS */
+@media screen and (min-width: 1024px){
+    .nuestrosTrabajos{
+        display: grid;
+        grid-template-areas: "titulo titulo titulo"
+        "nomicom jordan hamburguesa";
+    }
+}
+
+.nosotros{
+    margin: 20px;
+}
+.tituloTrabajos{
+    grid-area: titulo;
+    margin: 2em;
+}
+.nomicom{
+    grid-area: nomicom;
+    display: flex;
+    width: 100%;
+}
+.jordan{
+    grid-area: jordan;
+    display: flex;
+    width: 100%;
+}
+.hamburguesa{
+    grid-area: hamburguesa;
+    display: flex;
+    width: 100%;
+}
+
+
+/* estilos HTML CONSULTA */
+
+.ingresoConsulta{
+    width: 100%;
+    
+}
+.btn{
+    width: 30%;
+}
+.nameForm{
+    width: 100%;
+    
+}
+.mailForm{
+    width: 100%;
+}
+
+.formularioConsulta{
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 468px;
+    background-color: bisque;
+}
+
+.medioContacto{
+    margin-top: 2.2rem;
+    text-align: end;
+}
+
+
+
+
