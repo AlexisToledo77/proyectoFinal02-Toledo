@@ -1,0 +1,22 @@
+$color-principal: rgb(246, 206, 206);
+
+body{
+    background-color: $color-principal;
+    .nameForm{
+        width: 100%; 
+    }
+    .mailForm{
+        width: 100%;
+    }
+    .ingresoConsulta{
+        width: 100%;
+        
+    }
+    .btn{
+        width: 30%;
+    }   
+    .medioContacto{
+        margin-top: 2.2rem;
+        text-align: end;
+    }
+}

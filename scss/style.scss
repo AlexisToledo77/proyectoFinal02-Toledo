@@ -1,0 +1,191 @@
+/*import*/
+@import "utilities/contacto";
+
+$color-principal: rgb(246, 206, 206);
+
+/* reset */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*estilos body*/
+body{
+    background-color: $color-principal;
+    contain:content;
+}
+
+/*estilos header*/
+.header{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /*logo y animacion*/
+    .logo{
+        width: 10rem;
+        top: 4px;
+        animation-name: latir;
+        animation-iteration-count: initial;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+    }
+    @keyframes latir{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 100%;
+        }
+        from{
+            transform: scale(0.5);
+        }
+        to{
+            transform: scale(1);
+        }
+    }
+    /*estilos menu*/
+    .botonesMenu li{
+        font-weight: bold;
+        
+    }
+    .nav-item{
+    
+        font-size: 1rem;
+    }
+    .nav-item:hover {
+        background-color: blue;
+        border-radius: 10px;
+    }
+    .btn1 {
+        background-color: blue;
+        border-radius: 10px;
+    }
+    /*boton redes*/
+    .redes{
+        display: flex;
+        justify-content: center;
+    
+        .ig{
+            height:20px;
+            transition: 0.4s;
+            margin-right: 5px;
+        }
+        .ig:hover{
+            transform: scale(1.5);
+            margin-right:7px;
+        }
+        .fb{
+            height:20px;
+            transition: 0.4s;
+        }
+        .fb:hover{
+            transform: scale(1.5);
+            margin-left:7px;
+        }
+    }
+}
+
+/*estilos main*/
+.contenedorPrincipalMain{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "presentacion"
+                         "main"
+                         "lorem"
+                         "footer";
+
+    .presentacion{
+        background-image: linear-gradient(to left, rgb(218, 218, 218), rgb(228, 64, 217) );
+        height: 300px;
+        grid-area: presentacion;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+        .presentacion p{
+            position: absolute;
+            color: rgb(32, 27, 27);
+            text-align: center;
+            }
+        }
+    .mainIndex{
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        .main__img{
+            display: grid;
+            background-color: black;
+            grid-template-areas: "foto1 foto2 foto3"
+                                 "foto1 foto4 foto5";
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+           .foto1{
+                grid-area: foto1;              
+            }
+           .foto2{
+                grid-area: foto2;
+            }
+           .fotoChica1{
+                grid-area: foto3;
+            }
+            .fotoChica2{
+                grid-area: foto4;
+            }
+            .fotoChica3{
+                grid-area: foto5;
+            }
+        }
+        .lorem{
+            grid-area: lorem;
+            margin: 2rem;
+            text-align: center;
+        }
+        /*estilos footer*/
+        .footer{
+            grid-area: footer;
+            background-color: rgb(66, 64, 64);
+            margin-top: 4rem;
+            color: rgb(236, 232, 232);
+            text-align: center;
+            .footer a{
+                color: aliceblue;
+            }
+        }
+    }
+}
+
+/* media queries mobile INDEX */
+@media screen and (max-width: 800px){
+   
+    .logo{
+        display: none;
+    }
+    .presentacion{
+        display: flex;
+        font-size: 1.3rem;
+        font-weight: bold;
+        width: 50%;
+    }
+    .main__img{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .lorem p{
+        display: flex;
+        font-size: 1.3rem;
+        width: 50%;
+    }
+    .footer{
+        display: flex;
+        .footer p{
+            margin-left: 100px;
+        }
+    }
+    
+} 
