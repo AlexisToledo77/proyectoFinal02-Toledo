@@ -1,0 +1,30 @@
+/* media queries mobile INDEX */
+@media screen and (max-width: 800px){
+   
+    .logo{
+        display: none;
+    }
+    .presentacion{
+        display: flex;
+        font-size: 1.3rem;
+        font-weight: bold;
+        width: 50%;
+    }
+    .main__img{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .lorem p{
+        display: flex;
+        font-size: 1.3rem;
+        width: 50%;
+    }
+    .footer{
+        display: flex;
+        .footer p{
+            margin-left: 100px;
+        }
+    }
+    
+} 

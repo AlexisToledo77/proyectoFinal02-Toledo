@@ -1,7 +1,10 @@
 /*import*/
 @import "utilities/contacto";
-
-$color-principal: rgb(246, 206, 206);
+@import "utilities/mixin";
+@import "utilities/variables";
+@import "utilities/maps";
+@import "utilities/extend";
+@import "utilities/mediasQueries";
 
 /* reset */
 *{
@@ -23,7 +26,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    /*logo y animacion*/
+    //logo y animacion
     .logo{
         width: 10rem;
         top: 4px;
@@ -56,33 +59,33 @@ body{
         font-size: 1rem;
     }
     .nav-item:hover {
-        background-color: blue;
-        border-radius: 10px;
+        background-color: map-get($map: $botones-menu, $key: color-standar);
+        border-radius: map-get($map: $botones-menu, $key: border-radius);
+        @extend %botones;
     }
     .btn1 {
-        background-color: blue;
-        border-radius: 10px;
+        background-color: map-get($map: $botones-menu, $key: color-standar);
+        border-radius: map-get($map: $botones-menu, $key: border-radius);
+        @extend %botones;
     }
-    /*boton redes*/
+    //boton redes
     .redes{
         display: flex;
         justify-content: center;
     
         .ig{
-            height:20px;
-            transition: 0.4s;
+            @include logosRedes;
             margin-right: 5px;
         }
         .ig:hover{
-            transform: scale(1.5);
+            @include transformacionRedes (scale(1.5));
             margin-right:7px;
         }
         .fb{
-            height:20px;
-            transition: 0.4s;
+            @include logosRedes;
         }
         .fb:hover{
-            transform: scale(1.5);
+            @include transformacionRedes (scale(1.5));
             margin-left:7px;
         }
     }
@@ -159,33 +162,5 @@ body{
     }
 }
 
-/* media queries mobile INDEX */
-@media screen and (max-width: 800px){
-   
-    .logo{
-        display: none;
-    }
-    .presentacion{
-        display: flex;
-        font-size: 1.3rem;
-        font-weight: bold;
-        width: 50%;
-    }
-    .main__img{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-    }
-    .lorem p{
-        display: flex;
-        font-size: 1.3rem;
-        width: 50%;
-    }
-    .footer{
-        display: flex;
-        .footer p{
-            margin-left: 100px;
-        }
-    }
-    
-} 
+
+

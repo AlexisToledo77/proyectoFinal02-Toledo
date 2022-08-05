@@ -1,0 +1,23 @@
+//mixin sin parametros
+
+@mixin logosRedes{
+    height:20px;
+    transition: 0.4s;
+}
+
+//mixin con parametros
+
+@mixin medidasEtiquetas($width, $height){
+    width: $width;
+    height: $heigth;
+}
+
+//mixin transformaciones
+
+@mixin transformacionRedes($transform){
+    transform: $transform;
+    -webkit-transform: $transform;
+    -o-transform: $transform;
+    -moz-transform: $transform;
+
+}

@@ -13,6 +13,31 @@ body {
     margin-top: 2.2rem;
     text-align: end; }
 
+.header .nav-item:hover, .header .btn1 {
+  border: 1px solid white; }
+
+/* media queries mobile INDEX */
+@media screen and (max-width: 800px) {
+  .logo {
+    display: none; }
+  .presentacion {
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 50%; }
+  .main__img {
+    display: flex;
+    flex-direction: column;
+    width: 50%; }
+  .lorem p {
+    display: flex;
+    font-size: 1.3rem;
+    width: 50%; }
+  .footer {
+    display: flex; }
+    .footer .footer p {
+      margin-left: 100px; } }
+
 /* reset */
 * {
   padding: 0px;
@@ -31,9 +56,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  /*logo y animacion*/
-  /*estilos menu*/
-  /*boton redes*/ }
+  /*estilos menu*/ }
   .header .logo {
     width: 10rem;
     top: 4px;
@@ -56,10 +79,10 @@ body {
   .header .nav-item {
     font-size: 1rem; }
   .header .nav-item:hover {
-    background-color: blue;
+    background-color: #4646fa;
     border-radius: 10px; }
   .header .btn1 {
-    background-color: blue;
+    background-color: #4646fa;
     border-radius: 10px; }
   .header .redes {
     display: flex;
@@ -70,12 +93,18 @@ body {
       margin-right: 5px; }
     .header .redes .ig:hover {
       transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+      -o-transform: scale(1.5);
+      -moz-transform: scale(1.5);
       margin-right: 7px; }
     .header .redes .fb {
       height: 20px;
       transition: 0.4s; }
     .header .redes .fb:hover {
       transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+      -o-transform: scale(1.5);
+      -moz-transform: scale(1.5);
       margin-left: 7px; }
 
 /*estilos main*/
@@ -130,25 +159,3 @@ body {
       text-align: center; }
       .contenedorPrincipalMain .mainIndex .footer .footer a {
         color: aliceblue; }
-
-/* media queries mobile INDEX */
-@media screen and (max-width: 800px) {
-  .logo {
-    display: none; }
-  .presentacion {
-    display: flex;
-    font-size: 1.3rem;
-    font-weight: bold;
-    width: 50%; }
-  .main__img {
-    display: flex;
-    flex-direction: column;
-    width: 50%; }
-  .lorem p {
-    display: flex;
-    font-size: 1.3rem;
-    width: 50%; }
-  .footer {
-    display: flex; }
-    .footer .footer p {
-      margin-left: 100px; } }
