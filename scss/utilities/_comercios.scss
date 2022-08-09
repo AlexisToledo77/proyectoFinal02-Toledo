@@ -1,0 +1,46 @@
+
+.parrafo {
+    height: auto;
+    width: 700px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.parrafo p{
+    height: auto;
+}
+
+.tecnicaGuir{
+    grid-area: tecnicaGuir;
+}
+.tecnicaNeon{
+    grid-area: tecnicaNeon;
+}
+.tecnicaLuminarias{
+    grid-area: tecnicaLuminarias;
+}
+
+.tituloComercios{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+   
+}
+
+/* titulos de productos informacion tecnica */
+
+.mainInfoTecnica h2{
+    margin: 20px;
+}
+
+
+/* descripcion de informacion tecnica */
+.mainInfoTecnica{
+    margin-left: 3%;
+}
+.mainInfoTecnica p{
+    margin-left: 20px; 
+}
+

@@ -12,7 +12,7 @@
     }
     .main__img{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         width: 50%;
     }
     .lorem p{
@@ -22,9 +22,50 @@
     }
     .footer{
         display: flex;
-        .footer p{
-            margin-left: 100px;
-        }
+        flex-direction: row;
+        align-content: center;
+        
     }
     
+    .ContentRedes{
+        display: flex;
+    }
 } 
+
+/* estilos HTML PRODUCTOS */
+@media screen and (min-width: 1024px){
+    .mainProductos{
+        display: grid;
+        grid-template-areas: "prodGuir prodGuir prodGuir"
+                             "guirVintage guirLed guirPera"
+                             "prodNeon prodNeon prodNeon"
+                             "neonTigre neonEmoji neonHelado";
+    }
+
+    .prodGuir{
+        grid-area: prodGuir;
+    }
+    .guirVintage{
+        grid-area: guirVintage;
+    }
+    .guirLed{
+        grid-area: guirLed;
+    }
+    .guirPera{
+        grid-area: guirPera;
+    }
+
+    .prodNeon{
+        grid-area: prodNeon;
+    }
+
+}
+
+/* estilos HTML INFOMRACION TECNICA */
+
+@media screen and (min-width: 1024px){
+    .mainInfoTecnica{
+        display: grid;
+        grid-template-areas: "tecnicaGuir tecnicaNeon tecnicaLuminaria";
+    }
+}

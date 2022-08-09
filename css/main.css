@@ -13,6 +13,86 @@ body {
     margin-top: 2.2rem;
     text-align: end; }
 
+/* descripcion del producto */
+.botonComprar {
+  background-color: #24c9ea; }
+
+/* estilos HTML NOSOTROS */
+@media screen and (min-width: 1024px) {
+  .contenedorNosotros {
+    display: grid;
+    grid-template-areas: "titulo titulo titulo" "section section section" "p p p" "nomicom jordan hamburguesa"; } }
+
+.contenedorNosotros .nosotros {
+  grid-area: titulo;
+  margin: 20px; }
+
+.contenedorNosotros section {
+  grid-area: section; }
+  .contenedorNosotros section .accordion-item {
+    background-color: #24c9ea;
+    border-radius: 10px; }
+    .contenedorNosotros section .accordion-item .accordion-button {
+      background-color: #24c9ea;
+      color: white;
+      text-shadow: 1px 1px #515050;
+      font-weight: bold; }
+
+.contenedorNosotros .tituloTrabajos {
+  grid-area: p;
+  margin: 2em; }
+
+.contenedorNosotros .nomicom {
+  grid-area: nomicom;
+  display: flex;
+  width: 100%; }
+
+.contenedorNosotros .jordan {
+  grid-area: jordan;
+  display: flex;
+  width: 100%; }
+
+.contenedorNosotros .hamburguesa {
+  grid-area: hamburguesa;
+  display: flex;
+  width: 100%; }
+
+.parrafo {
+  height: auto;
+  width: 700px;
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+.parrafo p {
+  height: auto; }
+
+.tecnicaGuir {
+  grid-area: tecnicaGuir; }
+
+.tecnicaNeon {
+  grid-area: tecnicaNeon; }
+
+.tecnicaLuminarias {
+  grid-area: tecnicaLuminarias; }
+
+.tituloComercios {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  margin-left: 2%;
+  margin-right: 2%; }
+
+/* titulos de productos informacion tecnica */
+.mainInfoTecnica h2 {
+  margin: 20px; }
+
+/* descripcion de informacion tecnica */
+.mainInfoTecnica {
+  margin-left: 3%; }
+
+.mainInfoTecnica p {
+  margin-left: 20px; }
+
 .header .nav-item:hover, .header .btn1 {
   border: 1px solid white; }
 
@@ -27,16 +107,40 @@ body {
     width: 50%; }
   .main__img {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 50%; }
   .lorem p {
     display: flex;
     font-size: 1.3rem;
     width: 50%; }
   .footer {
-    display: flex; }
-    .footer .footer p {
-      margin-left: 100px; } }
+    display: flex;
+    flex-direction: row;
+    align-content: center; }
+  .ContentRedes {
+    display: flex; } }
+
+/* estilos HTML PRODUCTOS */
+@media screen and (min-width: 1024px) {
+  .mainProductos {
+    display: grid;
+    grid-template-areas: "prodGuir prodGuir prodGuir" "guirVintage guirLed guirPera" "prodNeon prodNeon prodNeon" "neonTigre neonEmoji neonHelado"; }
+  .prodGuir {
+    grid-area: prodGuir; }
+  .guirVintage {
+    grid-area: guirVintage; }
+  .guirLed {
+    grid-area: guirLed; }
+  .guirPera {
+    grid-area: guirPera; }
+  .prodNeon {
+    grid-area: prodNeon; } }
+
+/* estilos HTML INFOMRACION TECNICA */
+@media screen and (min-width: 1024px) {
+  .mainInfoTecnica {
+    display: grid;
+    grid-template-areas: "tecnicaGuir tecnicaNeon tecnicaLuminaria"; } }
 
 /* reset */
 * {
@@ -79,10 +183,10 @@ body {
   .header .nav-item {
     font-size: 1rem; }
   .header .nav-item:hover {
-    background-color: #4646fa;
+    background-color: #24c9ea;
     border-radius: 10px; }
   .header .btn1 {
-    background-color: #4646fa;
+    background-color: #24c9ea;
     border-radius: 10px; }
   .header .redes {
     display: flex;
@@ -112,16 +216,16 @@ body {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto;
-  grid-template-areas: "presentacion" "main" "lorem" "footer"; }
+  grid-template-areas: "presentacion" "main" "lorem"; }
   .contenedorPrincipalMain .presentacion {
     background-image: linear-gradient(to left, #dadada, #e440d9);
-    height: 300px;
+    height: 200px;
     grid-area: presentacion;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4rem; }
+    font-size: 3rem; }
     .contenedorPrincipalMain .presentacion .presentacion p {
       position: absolute;
       color: #201b1b;
@@ -130,10 +234,13 @@ body {
     grid-area: main;
     display: flex;
     flex-direction: column;
-    /*estilos footer*/ }
+    margin: 2rem;
+    border: 1px red; }
     .contenedorPrincipalMain .mainIndex .main__img {
       display: grid;
       background-color: black;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto;
       grid-template-areas: "foto1 foto2 foto3" "foto1 foto4 foto5";
       padding-top: 2rem;
       padding-bottom: 2rem; }
@@ -147,15 +254,16 @@ body {
         grid-area: foto4; }
       .contenedorPrincipalMain .mainIndex .main__img .fotoChica3 {
         grid-area: foto5; }
-    .contenedorPrincipalMain .mainIndex .lorem {
-      grid-area: lorem;
-      margin: 2rem;
-      text-align: center; }
-    .contenedorPrincipalMain .mainIndex .footer {
-      grid-area: footer;
-      background-color: #424040;
-      margin-top: 4rem;
-      color: #ece8e8;
-      text-align: center; }
-      .contenedorPrincipalMain .mainIndex .footer .footer a {
-        color: aliceblue; }
+  .contenedorPrincipalMain .lorem {
+    grid-area: lorem;
+    margin: 2rem;
+    text-align: center; }
+
+/*estilos footer*/
+.footer {
+  background-color: #424040;
+  margin-top: 4rem;
+  color: #ece8e8;
+  text-align: center; }
+  .footer .footer a {
+    color: aliceblue; }

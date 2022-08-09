@@ -1,5 +1,8 @@
 /*import*/
 @import "utilities/contacto";
+@import "utilities/productos";
+@import "utilities/nosotros";
+@import "utilities/comercios";
 @import "utilities/mixin";
 @import "utilities/variables";
 @import "utilities/maps";
@@ -35,6 +38,7 @@ body{
         animation-duration: 1s;
         animation-timing-function: linear;
     }
+    
     @keyframes latir{
         0%{
             opacity: 0;
@@ -98,69 +102,76 @@ body{
     grid-template-rows: auto auto auto;
     grid-template-areas: "presentacion"
                          "main"
-                         "lorem"
-                         "footer";
+                         "lorem";
 
     .presentacion{
         background-image: linear-gradient(to left, rgb(218, 218, 218), rgb(228, 64, 217) );
-        height: 300px;
+        height: 200px;
         grid-area: presentacion;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 4rem;
+        font-size: 3rem;
         .presentacion p{
             position: absolute;
             color: rgb(32, 27, 27);
             text-align: center;
             }
         }
+    
     .mainIndex{
         grid-area: main;
         display: flex;
         flex-direction: column;
+        margin: 2rem;
+        border: 1px red;
         .main__img{
             display: grid;
             background-color: black;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
             grid-template-areas: "foto1 foto2 foto3"
                                  "foto1 foto4 foto5";
             padding-top: 2rem;
             padding-bottom: 2rem;
-           .foto1{
-                grid-area: foto1;              
-            }
-           .foto2{
-                grid-area: foto2;
-            }
-           .fotoChica1{
-                grid-area: foto3;
-            }
+            .foto1{
+                    grid-area: foto1;              
+                }
+            .foto2{
+                    grid-area: foto2;
+                }
+            .fotoChica1{
+                    grid-area: foto3;
+                }
             .fotoChica2{
-                grid-area: foto4;
-            }
+                    grid-area: foto4;
+                }
             .fotoChica3{
-                grid-area: foto5;
-            }
+                    grid-area: foto5;
+                }
         }
-        .lorem{
+    } 
+        
+    .lorem{
             grid-area: lorem;
             margin: 2rem;
             text-align: center;
         }
-        /*estilos footer*/
-        .footer{
-            grid-area: footer;
-            background-color: rgb(66, 64, 64);
-            margin-top: 4rem;
-            color: rgb(236, 232, 232);
-            text-align: center;
-            .footer a{
-                color: aliceblue;
-            }
-        }
-    }
 }
+    
+    /*estilos footer*/
+    .footer{
+        background-color: rgb(66, 64, 64);
+        margin-top: 4rem;
+        color: rgb(236, 232, 232);
+        text-align: center;
+        .footer a{
+            color: aliceblue;    
+            }
+    }
+
+
 
 
 

@@ -1,0 +1,12 @@
+@import "utilities/variables";
+@import "utilities/maps";
+
+
+
+/* descripcion del producto */
+
+
+
+.botonComprar{
+        background-color: map-get($map: $botones-menu, $key: color-standar);
+        }

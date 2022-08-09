@@ -1,0 +1,53 @@
+/* estilos HTML NOSOTROS */
+@media screen and (min-width: 1024px){
+    .contenedorNosotros{
+        display: grid;
+        grid-template-areas: "titulo titulo titulo"
+                             "section section section"
+                             "p p p"
+                             "nomicom jordan hamburguesa";
+    }
+}
+
+.contenedorNosotros{
+    .nosotros{
+        grid-area: titulo;
+        margin: 20px;
+    }
+    section{
+        grid-area: section;
+        .accordion-item{
+            background-color: map-get($map: $botones-menu, $key: color-standar);
+            border-radius: map-get($map: $botones-menu, $key: border-radius);
+            .accordion-button{
+                background-color: $color-secundario;
+                color: white;
+                text-shadow: 1px 1px rgb(81, 80, 80);
+                font-weight: bold;
+            }
+            .accordion-body{
+                
+            }
+        }
+    }
+
+    .tituloTrabajos{
+        grid-area: p;
+        margin: 2em;
+    }
+    .nomicom{
+        grid-area: nomicom;
+        display: flex;
+        width: 100%;
+    }
+    .jordan{
+        grid-area: jordan;
+        display: flex;
+        width: 100%;
+    }
+    .hamburguesa{
+        grid-area: hamburguesa;
+        display: flex;
+        width: 100%;
+    }
+}
