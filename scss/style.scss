@@ -124,8 +124,6 @@ body{
         grid-area: main;
         display: flex;
         flex-direction: column;
-        margin: 2rem;
-        border: 1px red;
         .main__img{
             display: grid;
             background-color: black;
@@ -154,8 +152,10 @@ body{
     } 
         
     .lorem{
+            display: flex;
             grid-area: lorem;
-            margin: 2rem;
+            margin-left: 5px;
+            margin-right: 5px;
             text-align: center;
         }
 }

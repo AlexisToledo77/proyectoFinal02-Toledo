@@ -10,8 +10,9 @@ body {
   body .btn {
     width: 30%; }
   body .medioContacto {
-    margin-top: 2.2rem;
-    text-align: end; }
+    margin-top: 2.5rem;
+    text-align: end;
+    border-radius: 7px; }
 
 /* descripcion del producto */
 .botonComprar {
@@ -25,18 +26,22 @@ body {
 
 .contenedorNosotros .nosotros {
   grid-area: titulo;
-  margin: 20px; }
+  margin: 3rem; }
+  .contenedorNosotros .nosotros .parrafoNosotros {
+    margin-top: 2rem; }
 
 .contenedorNosotros section {
   grid-area: section; }
-  .contenedorNosotros section .accordion-item {
-    background-color: #24c9ea;
-    border-radius: 10px; }
-    .contenedorNosotros section .accordion-item .accordion-button {
+  .contenedorNosotros section .accordion-flush {
+    margin: 2.5rem; }
+    .contenedorNosotros section .accordion-flush .accordion-item {
       background-color: #24c9ea;
-      color: white;
-      text-shadow: 1px 1px #515050;
-      font-weight: bold; }
+      border-radius: 10px; }
+      .contenedorNosotros section .accordion-flush .accordion-item .accordion-button {
+        background-color: #24c9ea;
+        color: white;
+        text-shadow: 1px 1px #242323;
+        font-weight: bold; }
 
 .contenedorNosotros .tituloTrabajos {
   grid-area: p;
@@ -233,9 +238,7 @@ body {
   .contenedorPrincipalMain .mainIndex {
     grid-area: main;
     display: flex;
-    flex-direction: column;
-    margin: 2rem;
-    border: 1px red; }
+    flex-direction: column; }
     .contenedorPrincipalMain .mainIndex .main__img {
       display: grid;
       background-color: black;
@@ -255,8 +258,10 @@ body {
       .contenedorPrincipalMain .mainIndex .main__img .fotoChica3 {
         grid-area: foto5; }
   .contenedorPrincipalMain .lorem {
+    display: flex;
     grid-area: lorem;
-    margin: 2rem;
+    margin-left: 5px;
+    margin-right: 5px;
     text-align: center; }
 
 /*estilos footer*/
