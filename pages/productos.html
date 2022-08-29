@@ -23,157 +23,235 @@
     <title> Productos </title>
 </head>
 
-<body class="conteiner-fluid body">
+<body background="../assets/bg_redeluces1.png">
     
     <!-- header -->
-    <header class="row header" id ="arriba">
-
+    <header class="container-fluid body" id ="arriba">
+        <div class="row header">
         <!-- logo -->
-        <div class="d-flex justify-content-center col-12">
-            <img class="logo " src="../assets/REDELUCES LOGO.png" alt=" Logo Redeluces ">
-        </div>
-        <div class="d-flex">
-            <!--  barra de navegacion -->
-            <nav class="navbar col-12 navbar-expand-lg bg-info mb-2 ">
-                <div class="container-fluid d-flex">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse botonesMenud-flex justify-content-center" id="navbarSupportedContent">
-                        <div>
-                            <ul class="navbar-nav text-center me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link text-white" aria-current="page" href="../index.html">INICIO </a>
-                                </li>
-                                <li class=" btn1 nav-item">
-                                    <a class="nav-link text-white" aria-current="page" href="../pages/productos.html">PRODUCTOS</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link font-weight-bold text-white" href="../pages/comercios.html">COMERCIOS</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-white" href="../pages/nosotros.html">NOSOTROS</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-white" href="../pages/contactanos.html">CONTACTANOS</a>
-                                </li>
-                            </ul>
+            <div class="col-12 d-flex justify-content-center">
+                <img class="logo " src="../assets/REDELUCES-LOGO.png" alt=" Logo Redeluces ">
+            </div>
+            <div class="col-2">
+                <img class="palabraRedeluces" src="/assets/soloredeluces.png" alt="Palabra REDELUCES">
+                <img class="logoChico" src="../assets/logoChico1.png" alt="Logo chico Redeluces">
+            </div>
+            <div class="col-8">
+                <!--  barra de navegacion -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid d-flex">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse botonesMenu justify-content-center" id="navbarSupportedContent">
+                            <div>
+                                <ul class="navbar-nav text-center me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" aria-current="page" href="../index.html">INICIO </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="btn1 nav-link" aria-current="page" href="/pages/productos.html">PRODUCTOS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="/pages/comercios.html">COMERCIOS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="/pages/nosotros.html">NOSOTROS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="/pages/contactanos.html">CONTACTANOS</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <table class="redes m-2">
-                        <tbody>
-                            <tr>
-                                <td> 
-                                    <a href="https://www.instagram.com/redeluces/?hl=es" target="_blank">
-                                        <img class="ig" src="../assets/ig logo.jpg" alt="">
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="https://www.facebook.com/redeluces/" target="_blank">
-                                        <img class="fb" src="../assets/fb.jpg" alt="">
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </nav>
+                </nav>
+            </div>
+            <div class=" col-2 ContentRedes">
+                <table class="redes m-2">
+                    <tbody>
+                        <tr>
+                            <td> 
+                                <a href="https://www.instagram.com/redeluces/?hl=es" target="_blank">
+                                    <img class="ig" src="../assets/ig logo.png" alt="">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://www.facebook.com/redeluces/" target="_blank">
+                                    <img class="fb" src="../assets/fb.png" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </header>
-    
-    <div class="row">
-        <section class="col-12">
-            <div class="d-flex flex-wrap justify-content-center">
-                <div class="m-3 card" style="width: 20rem;">
-                    <img src="../assets/editadas/GUIRNALDA CON LAMPARAS VINTAGE.png" class="card-img-top" alt="Neon">
-                    <div class="card-body">
-                    <h5 class="card-title">Guirnaldas Vintage</h5>
-                    <p class="card-text">Lámparas incandescentes transparentes. Tonalidad luz cálida. Consumo eléctrico 15w. </p>
-                    <a href="#" class="btn btn-primary botonComprar" style="width: 10rem;">COMPRAR</a>
+
+    <main class="container">
+        <div class="row productosAll">
+            <section class="col-12">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div class="m-3 card-img-top1" style="width: 19rem;">
+                        <img src="../assets/ProductosNeon/neonAbc.png" class="card-img-top" alt="Cartel Neon ABC">
+                        <div class="card-body">
+                            <h1 class="card-title"> Neón Abecedario </h1>
+                            <p class="card-text"> COLORES A ELECCION 50x50 cm. </p>
+                            <a href="#" class="botonComprar1">
+                                <p> COMPRAR </p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="m-3 card" style="width: 20rem;">
-                    <img src="../assets/editadas/Guirnalda con lámparas LED PERA cálidas.png" class="card-img-top" alt="Guirnaldas">
-                    <div class="card-body">
-                    <h5 class="card-title">Guirnalda LED </h5>
-                    <p class="card-text">Lámparas LED transparentes. Forma campana. Tonalidad cálida. Consumo eléctrico 1w. </p>
-                    <a href="#" class="btn btn-primary botonComprar" style="width: 10rem;">COMPRAR</a>
+                    <div class="m-3 card-img-top1" style="width: 19rem;">
+                        <img src="../assets/ProductosNeon/neonYeah.png " class="card-img-top" alt="Cartel Neon YEAH">
+                        <div class="card-body">
+                            <h1 class="card-title"> Neón Yeah </h1>
+                            <p class="card-text">  COLORES A ELECCION 50x40 cm. </p>
+                            <a href="#" class="botonComprar1">
+                                <p> COMPRAR </p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="m-3 card" style="width: 20rem;">
-                    <img src="../assets/editadas/Guirnalda con lámparas LED campana.png" class="card-img-top" alt="Luminarias">
-                    <div class="card-body">
-                    <h5 class="card-title">Guirnaldas LED Pera</h5>
-                    <p class="card-text">Lámparas LED transparentes. Vintage forma PERA. Tonalidad cálida. Consumo eléctrico 1w.</p>
-                    <a href="#" class="btn btn-primary botonComprar" style="width: 10rem;">COMPRAR</a>
+                    <div class="m-3 card-img-top1" style="width: 19rem;">
+                        <img src="../assets/ProductosNeon/neonSmile.png" class="card-img-top" alt="Cartel Neon Smile">
+                        <div class="card-body">
+                            <h1 class="card-title"> Neón Smile </h1>
+                            <p class="card-text"> COLORES A ELECCION 35x40 cm. </p>
+                            <a href="#" class="botonComprar1">
+                                <p> COMPRAR </p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="m-3 card" style="width: 20rem;">
-                    <img src="../assets/editadas/Guirnalda con lámparas LED campana.png" class="card-img-top" alt="Luminarias">
-                    <div class="card-body">
-                    <h5 class="card-title">Guirnaldas LED Pera</h5>
-                    <p class="card-text">Lámparas LED transparentes. Vintage forma PERA. Tonalidad cálida. Consumo eléctrico 1w.</p>
-                    <a href="#" class="btn btn-primary botonComprar" style="width: 10rem;">COMPRAR</a>
+                    <div class="m-3 card-img-top1" style="width: 19rem;">
+                        <img src="../assets/ProductosNeon/neonFlechas.png" class="card-img-top" alt="Cartel Neon Flechas">
+                        <div class="card-body">
+                            <h1 class="card-title"> Neón Flechas </h1>
+                            <p class="card-text"> COLORES A ELECCION 45x25 cm. </p>
+                            <a href="#" class="botonComprar1">
+                                <p> COMPRAR </p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="m-3 card" style="width: 20rem;">
-                    <img src="../assets/editadas/foto3.jpg" class="card-img-top" alt="Neon">
-                    <div class="card-body">
-                    <h5 class="card-title">Cartel Astronauta</h5>
-                    <p class="card-text">Cartel de 70 cm de ancho por 70 cm de alto en acrilico. Resistente a la intemperie. Tira de LED NEON. </p>
-                    <a href="#" class="btn btn-primary botonComprar" style="width: 10rem;">COMPRAR</a>
+                    <div class="m-3 card-img-top1" style="width: 19rem;">
+                        <img src="../assets/ProductosNeon/neonGirlPower.png" class="card-img-top" alt="Cartel Girl Power">
+                        <div class="card-body">
+                            <h1 class="card-title"> Neón Girl Power </h1>
+                            <p class="card-text"> COLORES A ELECCION 30x30 cm. </p>
+                            <a href="#" class="botonComprar1">
+                                <p> COMPRAR </p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="m-3 card" style="width: 20rem;">
-                    <img src="../assets/editadas/foto4.jpg" class="card-img-top" alt="Guirnaldas">
-                    <div class="card-body">
-                    <h5 class="card-title">Cartel Tigre </h5>
-                    <p class="card-text">Cartel de 70 cm de ancho por 70 cm de alto en acrilico. Resistente a la intemperie. Tira de LED NEON.</p>
-                    <a href="#" class="btn btn-primary botonComprar" style="width: 10rem;">COMPRAR</a>
+                    <div class="m-3 card-img-top1" style="width: 19rem;">
+                        <img src="../assets/ProductosNeon/neonHB.png" class="card-img-top" alt="Cartel Neon Cumpleaños">
+                        <div class="card-body">
+                            <h1 class="card-title"> Neón Cumpleaños </h1>
+                            <p class="card-text"> COLORES A ELECCION 50x50 cm. </p>
+                            <a href="#" class="botonComprar1">
+                                <p> COMPRAR </p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="m-3 card" style="width: 20rem;">
-                    <img src="../assets/editadas/foto5.jpg" class="card-img-top" alt="Luminarias">
-                    <div class="card-body">
-                    <h5 class="card-title">Cartel Helado</h5>
-                    <p class="card-text">Cartel de 70 cm de ancho por 70 cm de alto en acrilico. Resistente a la intemperie. Tira de LED NEON.</p>
-                    <a href="#" class="btn btn-primary botonComprar" style="width: 10rem;">COMPRAR</a>
+                    <div class="m-3 card-img-top1" style="width: 19rem;">
+                        <img src="../assets/ProductosNeon/neonMusica.png" class="card-img-top" alt="Cartel Neon Musica">
+                        <div class="card-body">
+                            <h1 class="card-title"> Neón Musica </h1>
+                            <p class="card-text"> COLORES A ELECCION 45x35 cm. </p>
+                            <a href="#" class="botonComprar1">
+                                <p> COMPRAR </p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="m-3 card" style="width: 20rem;">
-                    <img src="../assets/editadas/foto2.jpg" class="card-img-top" alt="Luminarias">
-                    <div class="card-body">
-                    <h5 class="card-title">Cartel Pacman</h5>
-                    <p class="card-text">Cartel de 70 cm de ancho por 70 cm de alto en acrilico. Resistente a la intemperie. Tira de LED NEON.</p>
-                    <a href="#" class="btn btn-primary botonComprar" style="width: 10rem;">COMPRAR</a>
+                    <div class="m-3 card-img-top1" style="width: 19rem;">
+                        <img src="../assets/ProductosNeon/neonTrago.png" class="card-img-top" alt="Cartel Neon Trago">
+                        <div class="card-body">
+                            <h1 class="card-title"> Neón Trago </h1>
+                            <p class="card-text"> COLORES A ELECCION </p>
+                            <a href="#" class="botonComprar1">
+                                <p> COMPRAR </p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="m-3 card" style="width: 20rem;">
-                    <img src="../assets/editadas/foto2.jpg" class="card-img-top" alt="Luminarias">
-                    <div class="card-body">
-                    <h5 class="card-title">Cartel Pacman</h5>
-                    <p class="card-text">Cartel de 70 cm de ancho por 70 cm de alto en acrilico. Resistente a la intemperie. Tira de LED NEON.</p>
-                    <a href="#" class="btn btn-primary botonComprar" style="width: 10rem;">COMPRAR</a>
+                    <div class="m-3 card-img-top1" style="width: 19rem;">
+                        <img src="../assets/ProductosNeon/neonFlamenco.png" class="card-img-top" alt="Cartel Neon Flamenco">
+                        <div class="card-body">
+                            <h1 class="card-title"> Neón Flamenco </h1>
+                            <p class="card-text"> COLORES A ELECCION 25x45 cm. </p>
+                            <a href="#" class="botonComprar1">
+                                <p> COMPRAR </p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="m-3 card" style="width: 20rem;">
-                    <img src="../assets/editadas/foto2.jpg" class="card-img-top" alt="Luminarias">
-                    <div class="card-body">
-                    <h5 class="card-title">Cartel Pacman</h5>
-                    <p class="card-text">Cartel de 70 cm de ancho por 70 cm de alto en acrilico. Resistente a la intemperie. Tira de LED NEON.</p>
-                    <a href="#" class="btn btn-primary botonComprar" style="width: 10rem;">COMPRAR</a>
+                    <div class="m-3 card-img-top1" style="width: 19rem;">
+                        <img src="../assets/ProductosNeon/neonGlobo.png" class="card-img-top" alt="Cartel Neon globo">
+                        <div class="card-body">
+                            <h1 class="card-title"> Neón Globos </h1>
+                            <p class="card-text"> COLORES A ELECCION 55x40 cm. </p>
+                            <a href="#" class="botonComprar1">
+                                <p> COMPRAR </p>
+                            </a>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    
+                    <div class="m-3 card-img-top1" style="width: 19rem;">
+                        <img src="../assets/ProductosNeon/neonPlaya.png" class="card-img-top" alt="Cartel Neon Playa">
+                        <div class="card-body">
+                            <h1 class="card-title"> Neón Playa</h1>
+                            <p class="card-text"> COLORES A ELECCION 55x40 cm. </p>
+                            <a href="#" class="botonComprar1">
+                                <p> COMPRAR </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="m-3 card-img-top1" style="width: 19rem;">
+                        <img src="../assets/ProductosNeon/neonHelado.png" class="card-img-top" alt="Cartel Neon Helado">
+                        <div class="card-body">
+                            <h1 class="card-title"> Neón Helado </h1>
+                            <p class="card-text"> COLORES A ELECCION 30x45 cm. </p>
+                            <a href="#" class="botonComprar1">
+                                <p> COMPRAR </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="m-3 card-img-top1" style="width: 19rem;">
+                        <img src="../assets/ProductosNeon/neonILY.png" class="card-img-top" alt="Cartel Neon I Love You">
+                        <div class="card-body">
+                            <h1 class="card-title"> Neón I Love You </h1>
+                            <p class="card-text"> COLORES A ELECCION 60x30 cm. </p>
+                            <a href="#" class="botonComprar1">
+                                <p> COMPRAR </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="m-3 card-img-top1" style="width: 19rem;">
+                        <img src="../assets/ProductosNeon/neonGames.png" class="card-img-top" alt="Cartel Neon Games">
+                        <div class="card-body">
+                            <h1 class="card-title"> Neon Games </h1>
+                            <p class="card-text"> COLORES A ELECCION 50x50 cm. </p>
+                            <a href="#" class="botonComprar1">
+                                <p> COMPRAR </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="m-3 card-img-top1" style="width: 19rem;">
+                        <img src="../assets/ProductosNeon/guirnaldas.png" class="card-img-top" alt="Cartel Neon Games">
+                        <div class="card-body">
+                            <h1 class="card-title"> Guirnaldas LED </h1>
+                            <p class="card-text"> LARGO A MEDIDA C/50 cm. </p>
+                            <a href="#" class="botonComprar1">
+                                <p> COMPRAR </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+        </div>
+    </main>
 
     <footer class="footer">
-        <p> Todos los derechos reservados® // Sitio creado por Alexis Toledo®</p>
-        <a href="#arriba"> Subir </a>
+        <p> Todos los derechos reservados® // Sitio creado por Alexis Toledo® </p>
+        <a href="#arriba" class="arriba">
+            <p> SUBIR </p>
+        </a>
     </footer>
 
 

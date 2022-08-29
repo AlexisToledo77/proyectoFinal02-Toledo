@@ -1,46 +1,248 @@
-/*import*/
-body {
-  background-color: #f6cece; }
-  body .nameForm {
-    width: 100%; }
-  body .mailForm {
-    width: 100%; }
-  body .ingresoConsulta {
-    width: 100%; }
-  body .btn {
-    width: 30%; }
-  body .medioContacto {
-    margin-top: 2.5rem;
-    text-align: end;
-    border-radius: 7px; }
+.header .nav-item:hover, .header .btn1 {
+  text-decoration: underline;
+  color: yellow; }
 
-/* descripcion del producto */
-.botonComprar {
-  background-color: #24c9ea; }
+.productosAll .card-body .card-title, .productosAll .card-body .card-text, .productosAll .card-body .botonComprar1 {
+  text-align: center;
+  text-shadow: 0.4em 0.4em 0.5em black;
+  color: white; }
+
+.footer, .footer .arriba, .mainContacto div h1, .contenedorNosotros main h1, .contenedorNosotros main .parrafoNosotros, .contenedorNosotros section .accordion-flush .accordion-item, .contenedorNosotros section .accordion-flush .accordion-item .accordion-button, .contenedorNosotros .tituloTrabajos, .bgComercios h1, .contenedorComercios .parrafo h2, .contenedorComercios .parrafo p {
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+/*estilos body*/
+body {
+  background-color: #59022B;
+  max-width: 100%;
+  max-height: 100%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-repeat: initial; }
+
+/*estilos header*/
+.header {
+  /*estilos menu*/ }
+  .header .logo {
+    width: 10rem;
+    top: 4px;
+    animation-name: latir;
+    animation-iteration-count: initial;
+    animation-duration: 1s;
+    animation-timing-function: linear; }
+
+@keyframes latir {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 100%; }
+  from {
+    transform: scale(0.5); }
+  to {
+    transform: scale(1); } }
+  .header .navbar {
+    background-color: #59022B; }
+  .header .botonesMenu li {
+    font-weight: bold; }
+  .header .nav-item {
+    font-size: 1rem; }
+  .header .nav-item:hover {
+    background-color: #bc04bf;
+    border-radius: 10px; }
+  .header .redes {
+    display: flex;
+    justify-content: center; }
+    .header .redes .ig {
+      height: 35px;
+      transition: 0.4s;
+      margin-right: 5px; }
+    .header .redes .ig:hover {
+      transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+      -o-transform: scale(1.5);
+      -moz-transform: scale(1.5);
+      margin-right: 7px; }
+    .header .redes .fb {
+      height: 35px;
+      transition: 0.4s; }
+    .header .redes .fb:hover {
+      transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+      -o-transform: scale(1.5);
+      -moz-transform: scale(1.5);
+      margin-left: 7px; }
+
+/*estilos main*/
+.fotoHome {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 2.6rem;
+  margin-right: 2.6rem; }
+  .fotoHome img {
+    max-width: 100%;
+    max-height: 100%; }
+
+.cajaServicios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #BC04BF;
+  opacity: 90%;
+  height: 2.7rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 2.6rem;
+  margin-right: 2.6rem; }
+
+.ContentPics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: center;
+  margin: 5% 15% 5% 15%; }
+  .ContentPics .fotosMain {
+    width: 100%;
+    height: 100%; }
+  .ContentPics .picsMain:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    box-shadow: 20px 20px 50px black; }
+
+/*estilos footer*/
+.footer {
+  background-color: #D9048E;
+  height: 9rem;
+  margin-top: 5rem;
+  padding-top: 2rem;
+  text-align: center; }
+  .footer .arriba {
+    text-decoration-line: none;
+    text-align: center;
+    font-weight: bold; }
+  .footer .arriba:hover {
+    color: yellow; }
+
+.header .nav-item:hover, .header .btn1 {
+  text-decoration: underline;
+  color: yellow; }
+
+.productosAll .card-body .card-title, .productosAll .card-body .card-text, .productosAll .card-body .botonComprar1 {
+  text-align: center;
+  text-shadow: 0.4em 0.4em 0.5em black;
+  color: white; }
+
+.footer, .footer .arriba, .mainContacto div h1, .contenedorNosotros main h1, .contenedorNosotros main .parrafoNosotros, .contenedorNosotros section .accordion-flush .accordion-item, .contenedorNosotros section .accordion-flush .accordion-item .accordion-button, .contenedorNosotros .tituloTrabajos, .bgComercios h1, .contenedorComercios .parrafo h2, .contenedorComercios .parrafo p {
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.mainContacto div h1 {
+  font-size: 2rem;
+  text-align: center; }
+
+.mainContacto form {
+  color: white; }
+
+.mainContacto .nameForm {
+  width: 100%; }
+
+.mainContacto .mailForm {
+  width: 100%; }
+
+.mainContacto .ingresoConsulta {
+  width: 100%; }
+
+.mainContacto .btn {
+  width: 30%;
+  background-color: #D9048E;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px black; }
+
+.mainContacto .medioContacto {
+  margin-top: 2.5rem;
+  text-align: end;
+  border-radius: 7px; }
+
+.header .nav-item:hover, .header .btn1 {
+  text-decoration: underline;
+  color: yellow; }
+
+.productosAll .card-body .card-title, .productosAll .card-body .card-text, .productosAll .card-body .botonComprar1 {
+  text-align: center;
+  text-shadow: 0.4em 0.4em 0.5em black;
+  color: white; }
+
+.footer, .footer .arriba, .mainContacto div h1, .contenedorNosotros main h1, .contenedorNosotros main .parrafoNosotros, .contenedorNosotros section .accordion-flush .accordion-item, .contenedorNosotros section .accordion-flush .accordion-item .accordion-button, .contenedorNosotros .tituloTrabajos, .bgComercios h1, .contenedorComercios .parrafo h2, .contenedorComercios .parrafo p {
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+/*estilos productos*/
+.productosAll {
+  margin-top: 3rem; }
+  .productosAll .card-body .card-title {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    font-weight: bold; }
+  .productosAll .card-body .card-text {
+    margin-top: 0.5rem; }
+  .productosAll .card-body .botonComprar1 {
+    text-decoration-line: none;
+    font-size: 1.5rem;
+    font-weight: bold; }
+  .productosAll .card-body .botonComprar1:hover {
+    color: yellow; }
+
+/*transformaciones productos*/
+.card-img-top1 img:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  position: relative;
+  z-index: 1;
+  box-shadow: 2px 2px 8px black; }
+
+.header .nav-item:hover, .header .btn1 {
+  text-decoration: underline;
+  color: yellow; }
+
+.productosAll .card-body .card-title, .productosAll .card-body .card-text, .productosAll .card-body .botonComprar1 {
+  text-align: center;
+  text-shadow: 0.4em 0.4em 0.5em black;
+  color: white; }
+
+.footer, .footer .arriba, .mainContacto div h1, .contenedorNosotros main h1, .contenedorNosotros main .parrafoNosotros, .contenedorNosotros section .accordion-flush .accordion-item, .contenedorNosotros section .accordion-flush .accordion-item .accordion-button, .contenedorNosotros .tituloTrabajos, .bgComercios h1, .contenedorComercios .parrafo h2, .contenedorComercios .parrafo p {
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
 /* estilos HTML NOSOTROS */
-@media screen and (min-width: 1024px) {
-  .contenedorNosotros {
-    display: grid;
-    grid-template-areas: "titulo titulo titulo" "section section section" "p p p" "nomicom jordan hamburguesa"; } }
-
-.contenedorNosotros .nosotros {
+.contenedorNosotros main {
   grid-area: titulo;
-  margin: 3rem; }
-  .contenedorNosotros .nosotros .parrafoNosotros {
-    margin-top: 2rem; }
+  margin: 3rem;
+  text-align: center; }
+  .contenedorNosotros main h1 {
+    margin-bottom: 2rem; }
+  .contenedorNosotros main .parrafoNosotros {
+    margin-top: 2rem;
+    font-size: 1.3rem; }
 
 .contenedorNosotros section {
   grid-area: section; }
   .contenedorNosotros section .accordion-flush {
     margin: 2.5rem; }
     .contenedorNosotros section .accordion-flush .accordion-item {
-      background-color: #24c9ea;
+      background-color: #bc04bf;
       border-radius: 10px; }
       .contenedorNosotros section .accordion-flush .accordion-item .accordion-button {
-        background-color: #24c9ea;
-        color: white;
-        text-shadow: 1px 1px #242323;
+        background-color: #bc04bf;
+        text-shadow: 2px 2px 8px black;
         font-weight: bold; }
 
 .contenedorNosotros .tituloTrabajos {
@@ -62,14 +264,47 @@ body {
   display: flex;
   width: 100%; }
 
-.parrafo {
-  height: auto;
-  width: 700px;
-  margin-left: 2rem;
-  margin-right: 2rem; }
+.header .nav-item:hover, .header .btn1 {
+  text-decoration: underline;
+  color: yellow; }
 
-.parrafo p {
-  height: auto; }
+.productosAll .card-body .card-title, .productosAll .card-body .card-text, .productosAll .card-body .botonComprar1 {
+  text-align: center;
+  text-shadow: 0.4em 0.4em 0.5em black;
+  color: white; }
+
+.footer, .footer .arriba, .mainContacto div h1, .contenedorNosotros main h1, .contenedorNosotros main .parrafoNosotros, .contenedorNosotros section .accordion-flush .accordion-item, .contenedorNosotros section .accordion-flush .accordion-item .accordion-button, .contenedorNosotros .tituloTrabajos, .bgComercios h1, .contenedorComercios .parrafo h2, .contenedorComercios .parrafo p {
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.bgComercios {
+  margin-top: 5rem;
+  margin-bottom: 3rem; }
+  .bgComercios h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center; }
+
+.contenedorComercios {
+  display: grid;
+  grid-template-areas: "tecnicaGuir tecnicaNeon tecnicaLuminaria";
+  font-size: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  justify-items: space-between; }
+  .contenedorComercios .parrafo {
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: auto; }
+    .contenedorComercios .parrafo h2 {
+      font-size: 1.3rem;
+      font-weight: bold;
+      font-size: 1.7rem;
+      margin-top: 4rem; }
+    .contenedorComercios .parrafo p {
+      margin-top: 2rem; }
 
 .tecnicaGuir {
   grid-area: tecnicaGuir; }
@@ -80,195 +315,118 @@ body {
 .tecnicaLuminarias {
   grid-area: tecnicaLuminarias; }
 
-.tituloComercios {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-  text-align: center;
-  margin-left: 2%;
-  margin-right: 2%; }
-
-/* titulos de productos informacion tecnica */
-.mainInfoTecnica h2 {
-  margin: 20px; }
-
-/* descripcion de informacion tecnica */
-.mainInfoTecnica {
-  margin-left: 3%; }
-
-.mainInfoTecnica p {
-  margin-left: 20px; }
-
 .header .nav-item:hover, .header .btn1 {
-  border: 1px solid white; }
+  text-decoration: underline;
+  color: yellow; }
 
-/* media queries mobile INDEX */
+.productosAll .card-body .card-title, .productosAll .card-body .card-text, .productosAll .card-body .botonComprar1 {
+  text-align: center;
+  text-shadow: 0.4em 0.4em 0.5em black;
+  color: white; }
+
+.footer, .footer .arriba, .mainContacto div h1, .contenedorNosotros main h1, .contenedorNosotros main .parrafoNosotros, .contenedorNosotros section .accordion-flush .accordion-item, .contenedorNosotros section .accordion-flush .accordion-item .accordion-button, .contenedorNosotros .tituloTrabajos, .bgComercios h1, .contenedorComercios .parrafo h2, .contenedorComercios .parrafo p {
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+/* media queries mobile */
 @media screen and (max-width: 800px) {
   .logo {
     display: none; }
-  .presentacion {
+  .palabraRedeluces {
+    display: none; }
+  .logoChico {
+    scale: 0.7;
+    margin-left: 1rem; }
+  .cajaServicios p {
+    font-size: 0.9rem;
+    padding: 0.6rem; }
+  .ContentPics {
     display: flex;
-    font-size: 1.3rem;
-    font-weight: bold;
-    width: 50%; }
-  .main__img {
-    display: flex;
-    flex-direction: row;
-    width: 50%; }
-  .lorem p {
-    display: flex;
-    font-size: 1.3rem;
-    width: 50%; }
+    flex-wrap: wrap; }
+  .redes {
+    scale: 0.7; }
   .footer {
+    font-size: 0.8rem; }
+  .card-img-top1 {
+    scale: 0.8; }
+  .card-img-top1 img:hover {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -moz-transform: scale(1); }
+  .bgComercios {
+    margin-top: 5rem; }
+    .bgComercios h1 {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      font-size: 1.5rem; }
+  .contenedorComercios {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem; }
+    .contenedorComercios h2 {
+      font-size: 1.2rem; }
+    .contenedorComercios .parrafo {
+      font-size: 0.9rem; }
+  .contenedorNosotros main h1 {
+    font-size: 1.9rem; }
+  .contenedorNosotros main p {
+    scale: 0.8; }
+  .mediaContactanos {
+    display: flex;
+    flex-direction: column; }
+    .mediaContactanos .formContacto {
+      width: auto; }
+      .mediaContactanos .formContacto .divBoton {
+        width: 350px; }
+        .mediaContactanos .formContacto .divBoton .btn {
+          font-size: 0.9rem; }
+    .mediaContactanos .medioContacto {
+      width: auto;
+      margin-left: 1rem;
+      margin-right: 1rem; } }
+
+/* media queries tablet*/
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  .logo {
+    display: none; }
+  .palabraRedeluces {
     display: flex;
     flex-direction: row;
-    align-content: center; }
-  .ContentRedes {
-    display: flex; } }
-
-/* estilos HTML PRODUCTOS */
-@media screen and (min-width: 1024px) {
-  .mainProductos {
+    justify-content: flex-start;
+    scale: 0.8; }
+  .logoChico {
+    display: none; }
+  .cajaServicios p {
+    font-size: 1.5rem;
+    padding-top: 0.5; }
+  .ContentPics {
+    justify-items: center; }
+  .bgComercios {
+    margin-top: 5rem; }
+    .bgComercios h1 {
+      font-size: 2rem; }
+  .contenedorComercios {
     display: grid;
-    grid-template-areas: "prodGuir prodGuir prodGuir" "guirVintage guirLed guirPera" "prodNeon prodNeon prodNeon" "neonTigre neonEmoji neonHelado"; }
-  .prodGuir {
-    grid-area: prodGuir; }
-  .guirVintage {
-    grid-area: guirVintage; }
-  .guirLed {
-    grid-area: guirLed; }
-  .guirPera {
-    grid-area: guirPera; }
-  .prodNeon {
-    grid-area: prodNeon; } }
+    grid-template-areas: "tecnicaGuir tecnicaNeon tecnicaLuminaria";
+    font-size: 1rem; }
+    .contenedorComercios h2 {
+      font-size: 1.3rem; }
+    .contenedorComercios .parrafo {
+      font-size: 0.9rem; } }
 
-/* estilos HTML INFOMRACION TECNICA */
-@media screen and (min-width: 1024px) {
-  .mainInfoTecnica {
+@media screen and (min-width: 1025px) {
+  .palabraRedeluces {
+    display: none; }
+  .logoChico {
+    display: none; }
+  .contenedorNosotros {
     display: grid;
-    grid-template-areas: "tecnicaGuir tecnicaNeon tecnicaLuminaria"; } }
+    grid-template-areas: "titulo titulo titulo" "section section section" "p p p" "nomicom jordan hamburguesa"; } }
 
 /* reset */
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box; }
-
-/*estilos body*/
-body {
-  background-color: #f6cece;
-  contain: content; }
-
-/*estilos header*/
-.header {
-  background-color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  /*estilos menu*/ }
-  .header .logo {
-    width: 10rem;
-    top: 4px;
-    animation-name: latir;
-    animation-iteration-count: initial;
-    animation-duration: 1s;
-    animation-timing-function: linear; }
-
-@keyframes latir {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 100%; }
-  from {
-    transform: scale(0.5); }
-  to {
-    transform: scale(1); } }
-  .header .botonesMenu li {
-    font-weight: bold; }
-  .header .nav-item {
-    font-size: 1rem; }
-  .header .nav-item:hover {
-    background-color: #24c9ea;
-    border-radius: 10px; }
-  .header .btn1 {
-    background-color: #24c9ea;
-    border-radius: 10px; }
-  .header .redes {
-    display: flex;
-    justify-content: center; }
-    .header .redes .ig {
-      height: 20px;
-      transition: 0.4s;
-      margin-right: 5px; }
-    .header .redes .ig:hover {
-      transform: scale(1.5);
-      -webkit-transform: scale(1.5);
-      -o-transform: scale(1.5);
-      -moz-transform: scale(1.5);
-      margin-right: 7px; }
-    .header .redes .fb {
-      height: 20px;
-      transition: 0.4s; }
-    .header .redes .fb:hover {
-      transform: scale(1.5);
-      -webkit-transform: scale(1.5);
-      -o-transform: scale(1.5);
-      -moz-transform: scale(1.5);
-      margin-left: 7px; }
-
-/*estilos main*/
-.contenedorPrincipalMain {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "presentacion" "main" "lorem"; }
-  .contenedorPrincipalMain .presentacion {
-    background-image: linear-gradient(to left, #dadada, #e440d9);
-    height: 200px;
-    grid-area: presentacion;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem; }
-    .contenedorPrincipalMain .presentacion .presentacion p {
-      position: absolute;
-      color: #201b1b;
-      text-align: center; }
-  .contenedorPrincipalMain .mainIndex {
-    grid-area: main;
-    display: flex;
-    flex-direction: column; }
-    .contenedorPrincipalMain .mainIndex .main__img {
-      display: grid;
-      background-color: black;
-      grid-template-columns: auto auto auto;
-      grid-template-rows: auto auto;
-      grid-template-areas: "foto1 foto2 foto3" "foto1 foto4 foto5";
-      padding-top: 2rem;
-      padding-bottom: 2rem; }
-      .contenedorPrincipalMain .mainIndex .main__img .foto1 {
-        grid-area: foto1; }
-      .contenedorPrincipalMain .mainIndex .main__img .foto2 {
-        grid-area: foto2; }
-      .contenedorPrincipalMain .mainIndex .main__img .fotoChica1 {
-        grid-area: foto3; }
-      .contenedorPrincipalMain .mainIndex .main__img .fotoChica2 {
-        grid-area: foto4; }
-      .contenedorPrincipalMain .mainIndex .main__img .fotoChica3 {
-        grid-area: foto5; }
-  .contenedorPrincipalMain .lorem {
-    display: flex;
-    grid-area: lorem;
-    margin-left: 5px;
-    margin-right: 5px;
-    text-align: center; }
-
-/*estilos footer*/
-.footer {
-  background-color: #424040;
-  margin-top: 4rem;
-  color: #ece8e8;
-  text-align: center; }
-  .footer .footer a {
-    color: aliceblue; }

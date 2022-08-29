@@ -1,71 +1,173 @@
-/* media queries mobile INDEX */
+/* media queries mobile */
 @media screen and (max-width: 800px){
-   
+    
+    //mediasQ INDEX
     .logo{
         display: none;
-    }
-    .presentacion{
-        display: flex;
-        font-size: 1.3rem;
-        font-weight: bold;
-        width: 50%;
-    }
-    .main__img{
-        display: flex;
-        flex-direction: row;
-        width: 50%;
-    }
-    .lorem p{
-        display: flex;
-        font-size: 1.3rem;
-        width: 50%;
-    }
-    .footer{
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        
-    }
-    
-    .ContentRedes{
-        display: flex;
-    }
-} 
+    } 
 
-/* estilos HTML PRODUCTOS */
-@media screen and (min-width: 1024px){
-    .mainProductos{
-        display: grid;
-        grid-template-areas: "prodGuir prodGuir prodGuir"
-                             "guirVintage guirLed guirPera"
-                             "prodNeon prodNeon prodNeon"
-                             "neonTigre neonEmoji neonHelado";
+    //logo chico solo palabra
+    .palabraRedeluces{
+        display: none;
     }
 
-    .prodGuir{
-        grid-area: prodGuir;
-    }
-    .guirVintage{
-        grid-area: guirVintage;
-    }
-    .guirLed{
-        grid-area: guirLed;
-    }
-    .guirPera{
-        grid-area: guirPera;
+    //logo chico solo
+    .logoChico{
+        scale: 0.7;
+        margin-left: 1rem;
     }
 
-    .prodNeon{
-        grid-area: prodNeon;
+   .cajaServicios{
+        p{
+        font-size: 0.9rem;
+        padding: 0.6rem;
+        }
     }
 
+   .ContentPics{
+        display: flex;
+        flex-wrap: wrap;
+   }
+
+    //boton redes
+   .redes{
+    scale: 0.7;
+    }
+
+   .footer{
+        font-size: 0.8rem;
+   }
+   
+    // mediasQ productos
+    .card-img-top1{
+        scale: 0.8;
+    }
+    .card-img-top1 img:hover{
+        @include transformacionRedes (scale(1));
+    }
+
+    //mediaQ comercios
+    .bgComercios{
+        margin-top: 5rem;
+        h1{
+            margin-left: 2rem;
+            margin-right: 2rem;
+            font-size: 1.5rem;
+        }
+    }
+    .contenedorComercios{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1rem;
+        h2{
+            font-size: 1.2rem;
+        }
+        .parrafo{
+            font-size: 0.9rem;
+        }
+    }
+
+    //mediaQ nosotros
+    .contenedorNosotros{
+        main{
+            h1{
+                font-size: 1.9rem;
+            }
+            p{
+                scale: 0.8;
+            }
+        }
+    }
+
+    //mediaQcontactanos
+    .mediaContactanos{
+        display: flex;
+        flex-direction: column;
+        .formContacto{
+            width: auto;
+            .divBoton{
+                width: 350px;
+                .btn{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+        .medioContacto{
+            width: auto;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    }
 }
+    
+    
+/* media queries tablet*/
+@media screen and (min-width: 801px) and (max-width: 1024px){
 
-/* estilos HTML INFOMRACION TECNICA */
+    //mediaQ index - tablet
+    .logo{
+        display: none;
+    } 
+    .palabraRedeluces{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        scale: 0.8;
+    }
+    .logoChico{
+        display: none;
+    }
+    .cajaServicios{
+        p{
+        font-size: 1.5rem;
+        padding-top: 0.5;
+        }
+    }
+    .ContentPics{
+        justify-items: center;
+    }
 
-@media screen and (min-width: 1024px){
-    .mainInfoTecnica{
+    //mediaQ comercios
+    .bgComercios{
+        margin-top: 5rem;
+        h1{
+            font-size: 2rem;  
+        }
+    }
+    .contenedorComercios{
         display: grid;
         grid-template-areas: "tecnicaGuir tecnicaNeon tecnicaLuminaria";
+        font-size: 1rem;
+        h2{
+            font-size: 1.3rem;
+        }
+        .parrafo{
+            font-size: 0.9rem;
+        }
+    }   
+}
+
+//mediaQ generales Desktop
+@media screen and (min-width: 1025px){
+    .palabraRedeluces{
+        display: none;
+    }
+    .logoChico{
+        display: none;
+    }
+
+//mediaQ Nosotros
+    .contenedorNosotros{
+        display: grid;
+        grid-template-areas: "titulo titulo titulo"
+                             "section section section"
+                             "p p p"
+                             "nomicom jordan hamburguesa";
     }
 }
+
+
+
+
+
+

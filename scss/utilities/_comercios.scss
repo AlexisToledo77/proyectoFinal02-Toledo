@@ -1,14 +1,45 @@
+@import "utilities/variables";
+@import "utilities/maps";
+@import "utilities/mixin";
+@import "utilities/extend";
 
-.parrafo {
-    height: auto;
-    width: 700px;
-    margin-left: 2rem;
-    margin-right: 2rem;
+.bgComercios{
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        
+    h1{
+        @extend %textosGenerales;
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-align: center;
+    }
 }
+.contenedorComercios{
+        display: grid;
+        grid-template-areas: "tecnicaGuir tecnicaNeon tecnicaLuminaria";
+        font-size: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        justify-items: space-between;
+        .parrafo{
+            text-align: center;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            width: auto;
+            h2{
+                font-size: 1.3rem;
+                @extend %textosGenerales;
+                font-weight: bold;
+                font-size: 1.7rem;
+                margin-top: 4rem;
+            }
+            p{
+                @extend %textosGenerales;
+                margin-top: 2rem;
+            }
+        }    
+    }
 
-.parrafo p{
-    height: auto;
-}
 
 .tecnicaGuir{
     grid-area: tecnicaGuir;
@@ -20,27 +51,5 @@
     grid-area: tecnicaLuminarias;
 }
 
-.tituloComercios{
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    text-align: center;
-    margin-left: 2%;
-    margin-right: 2%;
-   
-}
 
-/* titulos de productos informacion tecnica */
-
-.mainInfoTecnica h2{
-    margin: 20px;
-}
-
-
-/* descripcion de informacion tecnica */
-.mainInfoTecnica{
-    margin-left: 3%;
-}
-.mainInfoTecnica p{
-    margin-left: 20px; 
-}
 

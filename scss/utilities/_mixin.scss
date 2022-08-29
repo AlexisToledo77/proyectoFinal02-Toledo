@@ -1,7 +1,7 @@
 //mixin sin parametros
 
 @mixin logosRedes{
-    height:20px;
+    height:35px;
     transition: 0.4s;
 }
 
@@ -20,4 +20,9 @@
     -o-transform: $transform;
     -moz-transform: $transform;
 
+}
+
+@mixin bgGeneral{
+    margin-right: 2rem;
+    margin-left: 2rem;
 }

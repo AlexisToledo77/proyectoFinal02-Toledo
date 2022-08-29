@@ -1,21 +1,23 @@
+@import "utilities/variables";
+@import "utilities/maps";
+@import "utilities/mixin";
+@import "utilities/extend";
+
 /* estilos HTML NOSOTROS */
-@media screen and (min-width: 1024px){
-    .contenedorNosotros{
-        display: grid;
-        grid-template-areas: "titulo titulo titulo"
-                             "section section section"
-                             "p p p"
-                             "nomicom jordan hamburguesa";
-    }
-}
 
 .contenedorNosotros{
-    .nosotros{
+    main{
         grid-area: titulo;
         margin: 3rem;
-        
+        text-align: center;
+        h1{
+            margin-bottom: 2rem;
+            @extend %textosGenerales;
+        }
         .parrafoNosotros{
             margin-top: 2rem;
+            @extend %textosGenerales;
+            font-size: 1.3rem;
         }
     }
     section{
@@ -25,19 +27,22 @@
             .accordion-item{
                 background-color: map-get($map: $botones-menu, $key: color-standar);
                 border-radius: map-get($map: $botones-menu, $key: border-radius);
+                @extend %textosGenerales;
                 .accordion-button{
-                    background-color: $color-secundario;
-                    color: white;
-                    text-shadow: 1px 1px rgb(36, 35, 35);
+                    background-color: map-get($map: $botones-menu, $key: color-standar);
+                    @extend %textosGenerales;
+                    text-shadow:$sombra-principal-textos;
                     font-weight: bold;
                 }
             }
         }
     }
 
+    //estilos fotos nosotros
     .tituloTrabajos{
         grid-area: p;
         margin: 2em;
+        @extend %textosGenerales;
     }
     .nomicom{
         grid-area: nomicom;

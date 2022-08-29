@@ -1,7 +1,18 @@
-$color-principal: rgb(246, 206, 206);
+@import "utilities/variables";
+@import "utilities/maps";
+@import "utilities/mixin";
+@import "utilities/extend";
 
-body{
-    background-color: $color-principal;
+//estilos html contacto
+.mainContacto{
+    div h1{
+        @extend %textosGenerales;
+        font-size: 2rem;
+        text-align: center;
+    }
+    form{
+        color: white;
+    }
     .nameForm{
         width: 100%; 
     }
@@ -10,10 +21,12 @@ body{
     }
     .ingresoConsulta{
         width: 100%;
-        
     }
     .btn{
         width: 30%;
+        background-color: $color-secundario;
+        font-weight: bold;
+        text-shadow: $sombra-principal-textos;
     }   
     .medioContacto{
         margin-top: 2.5rem;

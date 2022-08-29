@@ -1,0 +1,143 @@
+@import "utilities/variables";
+@import "utilities/maps";
+@import "utilities/mixin";
+@import "utilities/extend";
+
+/*estilos body*/
+body{
+    background-color: $color-principal;
+    max-width: 100%;
+    max-height: 100%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-repeat: initial;
+}
+
+/*estilos header*/
+.header{
+    //logo y animacion
+    .logo{
+        width: 10rem;
+        top: 4px;
+        animation-name: latir;
+        animation-iteration-count: initial;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+    }
+    
+    @keyframes latir{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 100%;
+        }
+        from{
+            transform: scale(0.5);
+        }
+        to{
+            transform: scale(1);
+        }
+    }
+
+    /*estilos menu*/
+    .navbar{
+        background-color: $color-principal;
+    }
+    .botonesMenu li{
+        font-weight: bold;
+    }
+    .nav-item{
+        font-size: 1rem;
+    }
+    .nav-item:hover {
+        background-color: map-get($map: $botones-menu, $key: color-standar);
+        border-radius: map-get($map: $botones-menu, $key: border-radius);
+        @extend %botones;
+    }
+    .btn1 {
+        @extend %botones;
+    }
+
+    //boton redes
+    .redes{
+        display: flex;
+        justify-content: center;
+    
+        .ig{
+            @include logosRedes;
+            margin-right: 5px;
+        }
+        .ig:hover{
+            @include transformacionRedes (scale(1.5));
+            margin-right:7px;
+        }
+        .fb{
+            @include logosRedes;
+        }
+        .fb:hover{
+            @include transformacionRedes (scale(1.5));
+            margin-left:7px;
+        }
+    }
+}
+
+/*estilos main*/
+.fotoHome{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 2.6rem;
+    margin-right: 2.6rem;
+    img {
+        max-width: 100%;
+        max-height: 100%;
+       } 
+}
+.cajaServicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: $color-terciario; 
+    opacity: 90%;
+    height: 2.7rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 2.6rem;
+    margin-right: 2.6rem;        
+}
+.ContentPics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    margin: 5% 15% 5% 15%;
+    .fotosMain{
+        width: 100%;
+        height: 100%;
+    }
+    .picsMain:hover{
+        @include transformacionRedes (scale(1.05));
+        box-shadow: 20px 20px 50px black;
+    }
+}
+ 
+/*estilos footer*/
+.footer{
+    background-color:$color-secundario;
+    height: 9rem;
+    margin-top: 5rem;
+    padding-top: 2rem;
+    @extend %textosGenerales;
+    text-align: center; 
+    .arriba{
+        text-decoration-line: none;
+        @extend %textosGenerales;
+        text-align: center;  
+        font-weight: bold;
+        }
+    .arriba:hover{
+            color: yellow;
+        }
+}
