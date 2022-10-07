@@ -62,7 +62,13 @@ let productos = [
     },
 
 ]
-let carrito = []
+let usuarios = [
+    {
+        usuario: "alexis",
+        pass: "123456"
+    }
+]
+let carrito = [] ;
 
 productos.forEach(producto => {
     let productoRenderizado = document.createElement("todosLosProductos")
@@ -81,10 +87,18 @@ productos.forEach(producto => {
     `
 
     todosLosProductos.append(productoRenderizado)
+
     const botonCarrito = document.getElementById(producto.id)
     botonCarrito.addEventListener("click", () => agregarCarrito(producto))
     
 })
+
+const actualizaCarrito = () => {
+    let carritoNumero = document.getElementById("numberCart")
+    carritoNumero.innerHTML = `${carrito.length}`
+
+}
+
 
 const agregarCarrito = (producto) => {
     let productoExiste = carrito.find(item => item.id === producto.id)
@@ -100,6 +114,12 @@ const agregarCarrito = (producto) => {
             cantidad: 1
         })
     }
-}
 
-botonCarrito.addEventListener("click", () => console.log(carrito))
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+}
+localStorage.setItem("registro", JSON.stringify(usuarios))
+let returnCarrito = JSON.parse(localStorage.getItem("carrito"));
+
+
+botonCarrito.addEventListener("click", () => alert(`Compraste ${carrito.producto} y el total es ${carrito.length}`))
+botonCarrito.addEventListener("click", () => alert(console.log(carrito)))
