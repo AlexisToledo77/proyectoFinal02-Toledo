@@ -121,5 +121,6 @@ localStorage.setItem("registro", JSON.stringify(usuarios))
 let returnCarrito = JSON.parse(localStorage.getItem("carrito"));
 
 
-botonCarrito.addEventListener("click", () => alert(`Compraste ${carrito.producto} y el total es ${carrito.length}`))
-botonCarrito.addEventListener("click", () => alert(console.log(carrito)))
+
+botonCarrito.addEventListener("click", () => console.log(returnCarrito))
+
