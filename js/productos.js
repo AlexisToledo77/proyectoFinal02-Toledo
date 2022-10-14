@@ -2,6 +2,7 @@
 
 const todosLosProductos = document.getElementById("todosLosProductos")
 const botonCarrito = document.getElementById("botonCarrito")
+const contenedorCarrito = document.getElementById("carrito-contenedor")
 
 let productos = [
     {
@@ -80,7 +81,7 @@ productos.forEach(producto => {
                                 <p class="card-text">  ${producto.detalle} </p>
                                 <p class="card-text">  $${producto.precio} </p>
                                 <button id=${producto.id}  class="botonComprar1">
-                                    <p> COMPRAR </p>
+                                    <p> Agregar al Carrito <i class="bi bi-cart-plus"></i></p>
                                 </button>
                             </div>
                     </div>
@@ -88,8 +89,18 @@ productos.forEach(producto => {
 
     todosLosProductos.append(productoRenderizado)
 
+        //agregado de libreria sweet alert
     const botonCarrito = document.getElementById(producto.id)
-    botonCarrito.addEventListener("click", () => agregarCarrito(producto))
+    botonCarrito.addEventListener("click", () => {
+        agregarCarrito(producto)
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Agregaste el producto al Carrito',
+            showConfirmButton: false,
+            timer: 1000
+          })
+    })
     
 })
 
@@ -122,5 +133,24 @@ let returnCarrito = JSON.parse(localStorage.getItem("carrito"));
 
 
 
-botonCarrito.addEventListener("click", () => console.log(returnCarrito))
+botonCarrito.addEventListener("click", () => {
+    console.log(returnCarrito)
+})
 
+/* botonCarrito.addEventListener("click", () => alert(`Compraste ${returnCarrito.producto} y el total es ${returnCarrito.carrito.length}`))
+ */
+
+const actualizarCarrito = () => {
+    carrito.forEach((producto) =>{
+        const div = document.createElement("div")
+        div.className = ("productoEnCarrito")
+        div.innerHTML = `
+        <p>${producto.nombre}</p>
+        <p>Precio $${producto.precio}</p>
+        <p>Cantidad: <span id="cantidad">${producto.cantidad}</span></p>
+        <button onclick="eliminarDelCarrito(${producto.id})" class="botonEliminar"></button>
+
+        `
+        contenedorCarrito.appendChild(div)
+    })
+}
