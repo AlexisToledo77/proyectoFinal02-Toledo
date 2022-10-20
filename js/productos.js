@@ -48,30 +48,6 @@ let usuarios = [
 ]
 let carrito = [] ;
 
-/* let productos = 
-
-productos.forEach(producto => {
-    let productoRenderizado = document.createElement("todosLosProductos")
-    productoRenderizado.innerHTML = `
-                    <div class="m-3 card-img-top1" style="width: 19rem;">
-                        <img src="${producto.imagen}">
-                            <div class="card-body">
-                                <h1 class="card-title"> ${producto.nombre} </h1>
-                                <p class="card-text">  ${producto.detalle} </p>
-                                <p class="card-text">  $${producto.precio} </p>
-                                <button id=${producto.id}  class="botonComprar1">
-                                    <p> Agregar al Carrito <i class="bi bi-cart-plus"></i></p>
-                                </button>
-                            </div>
-                    </div>
-    `
-    })
- */
-    
-
-   
-    
-
 
 const actualizaCarrito = () => {
     let carritoNumero = document.getElementById("numberCart")
