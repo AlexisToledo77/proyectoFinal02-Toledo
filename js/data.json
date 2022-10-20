@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "nombre": "Neón Abecedario",
+        "detalle": "COLORES A ELECCION 50x40 cm.",
+        "precio": 19999,
+        "imagen": "https://i.ibb.co/2kkZHNp/neonAbc.png"
+    },
+    {
+        "id": 2,
+        "nombre": "Neón Yeah",
+        "detalle": "COLORES A ELECCION 50x40 cm.",
+        "precio": 21999,
+        "imagen": "https://i.ibb.co/m0dQ2h9/neonYeah.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Neón Smile",
+        "detalle": "COLORES A ELECCION 50x40 cm.",
+        "precio": 21999,
+        "imagen": "https://i.ibb.co/fMbynFB/neon-Smile.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Neón Flechas",
+        "detalle": "COLORES A ELECCION 50x40 cm.",
+        "precio": 23999,
+        "imagen": "https://i.ibb.co/LYDv35M/neon-Flechas.png"
+    },
+    {
+        "id": 5,
+        "nombre": "Neón Girl Power",
+        "detalle": "COLORES A ELECCION 50x40 cm.",
+        "precio": 21999,
+        "imagen": "https://i.ibb.co/BNdCJrX/neon-Girl-Power.png"
+    },
+    {
+        "id": 6,
+        "nombre": "Neón Cumpleaños",
+        "detalle": "COLORES A ELECCION 50x40 cm.",
+        "precio": 24999,
+        "imagen": "https://i.ibb.co/7CyV2pz/neonHB.png"
+    },
+    {
+        "id": 7,
+        "nombre": "Neón Musica",
+        "detalle": "COLORES A ELECCION 50x40 cm.",
+        "precio": 20000,
+        "imagen": "https://i.ibb.co/6P2sSDZ/neon-Musica.png"
+    },
+    {
+        "id": 8,
+        "nombre": "Neón Trago",
+        "detalle": "COLORES A ELECCION 50x40 cm.",
+        "precio": 20000,
+        "imagen": "https://i.ibb.co/1LNmD6j/neon-Trago.png"
+    }
+]
